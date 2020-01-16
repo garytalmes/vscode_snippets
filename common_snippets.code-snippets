@@ -1,0 +1,127 @@
+{
+  /*
+  Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope is left empty or omitted, the snippet gets applied to all languages. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+
+  $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the same ids are connected.
+
+  Example:
+  "Print to console": {
+    "scope": "javascript,typescript",
+    "prefix": "log",
+    "body": [
+      "console.log('$1');",
+      "$2"
+    ],
+    "description": "Log output to console"
+  }
+  */
+
+	"jquery": {
+		"scope": "html",
+		"prefix": "jq",
+		"body": [
+			"<script src=\"https://code.jquery.com/jquery-3.4.1.min.js\"></script>",
+			"\r"
+		],
+		"description": "jQuery script tag"
+	},
+
+	"moment": {
+		"scope": "html",
+		"prefix": "mom",
+		"body": [
+			"<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js\"></script>",
+			"\r"
+		],
+		"description": "jQuery script tag"
+	},
+
+	"fontawesome": {
+		"scope": "html",
+		"prefix": "fa",
+		"body": [
+			"<script src=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css\"></script>",
+			"\r"
+		],
+		"description": "jQuery script tag"
+	},
+
+	"consolelog": {
+		"scope": "javascript,typescript,html",
+		"prefix": "con",
+		"body": [
+			"console.log('$1');",
+			"\r"
+		],
+		"description": "Log output to console"
+	},
+
+	"forloop": {
+		"scope": "javascript,typescript,html",
+		"prefix": "forloop",
+		"body": [
+			"for( var i=$1; i<$2; i++ ){",
+			"\t $3",
+			"}",
+			"\r"
+		],
+		"description": "Create a for loop"
+	},
+
+	"foreach": {
+		"scope": "javascript,typescript,html",
+		"prefix": "foreach",
+		"body": [
+			"$1.forEach(function(item, idx){",
+			"\t $2",
+			"});",
+			"\r"
+		],
+		"description": "Create a forEach loop"
+	},
+
+	"foreachA": {
+		"scope": "javascript,typescript,html",
+		"prefix": "foreachA",
+		"body": [
+			"$1.forEach((item, idx) => {",
+			"\t $2",
+			"});",
+			"\r"
+		],
+		"description": "Create a forEach loop with arrow func"
+	},
+
+	"arraymap": {
+		"scope": "javascript,typescript,html",
+		"prefix": "arrmap",
+		"body": [
+			"$1.map(item => {",
+			"\t $2",
+			"});",
+			"\r"
+		],
+		"description": "Create an array map with arrow func"
+	},
+
+	"switch": {
+		"scope": "javascript,typescript,html",
+		"prefix": "sw",
+		"body": [
+			"switch($1){",
+			"\t case \"$2\":",
+			"\t\t$3",
+			"\t\tbreak;",
+			"\r",
+			"\t case \"$4\":",
+			"\t\t$5",
+			"\t\tbreak;",
+			"\r",
+			"\t default:",
+			"\t\t$6",
+			"};",
+			"\r"
+		],
+		"description": "Create an array map with arrow func"
+	}
+}
