@@ -54,6 +54,16 @@
 			"\r"
 		],
 		"description": "Log output to console"
+  },
+  
+	"js random number": {
+		"scope": "javascript,typescript,html",
+		"prefix": "jsrandom",
+		"body": [
+			"let random = Math.floor(Math.random() * (max - min + 1) + min);",
+			"\r"
+		],
+		"description": "Javascript code for random number generation"
 	},
 
 	"forloop": {
